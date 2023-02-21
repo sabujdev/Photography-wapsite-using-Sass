@@ -1,3 +1,19 @@
 /*----------------------------------------*/
 /*  03.1 Hero CSS
 /*----------------------------------------*/
+@use "../variable" as *;
+.hero-area{
+    max-width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    background: linear-gradient($color-bg-800,$color-bg-600);
+    overflow: hidden;
+    .hero-container{
+        display: flex;
+        .hero-left{}
+        .hero-right{}
+    }
+
+
+}
