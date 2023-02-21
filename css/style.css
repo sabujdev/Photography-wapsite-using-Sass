@@ -4,7 +4,6 @@
 /*-- Google Font --*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Zilla+Slab:wght@400;500;600;700&display=swap");
 :root {
-  --body-color: rgba(255, 255, 255, 0.749);
   --color-primary: #02eeff;
   --color-primary-light: #5ddce5;
   --color-bg-600: #001517;
@@ -21,14 +20,12 @@
   --facebook: #4867aa;
   --github: #313131;
   --linkedin: #007bb6;
-  --container-width-lg:88%;
-  --container-width-md:92%;
+  --container-width-lg: 88%;
+  --container-width-md: 92%;
 }
 
 /*-- Common Style --*/
-*,
-*::after,
-*::before {
+* {
   margin: 0;
   padding: 0;
   outline: 0;
@@ -50,7 +47,7 @@ body {
   visibility: visible;
   background-color: #012e34;
   color: #85afb2;
-  line-height: 1.714;
+  line-height: 1.8;
   overflow-x: hidden;
 }
 
@@ -115,11 +112,52 @@ img {
 /*  02. Header CSS
 /*----------------------------------------*/
 nav {
+  margin: 0 auto;
   width: 100vw;
-  height: 80px;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: #00282d;
+  border-bottom: 0.2rem solid #012e34;
+  box-shadow: 0 0.2rem 0.7rem rgba(0, 0, 0, 0.3);
+}
+nav .nav_container {
+  height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 0.5rem;
+}
+nav .nav_container .nav-logo h2 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #5ddce5;
+}
+nav .nav_container .nav_links {
+  display: flex;
+  gap: 2.8rem;
+}
+nav .nav_container .nav_social {
+  display: flex;
+  gap: 1rem;
+}
+nav .nav_container .nav_social a {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-image: linear-gradient(#5ddce5, #02eeff);
+  color: #003f47;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+nav .nav_container .nav_social a:hover {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 /*----------------------------------------*/

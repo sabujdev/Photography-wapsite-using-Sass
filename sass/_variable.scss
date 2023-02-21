@@ -3,7 +3,6 @@
 //=======================
 
 :root {
-  --body-color: rgba(255, 255, 255, 0.749);
   --color-primary: #02eeff;
   --color-primary-light: #5ddce5;
   --color-bg-600: #001517; //bg-1
@@ -22,13 +21,12 @@
   --facebook: #4867aa;
   --github: #313131;
   --linkedin: #007bb6;
-//   container 
---container-width-lg:88%;
---container-width-md:92%;
+  //   container
+  --container-width-lg: 88%;
+  --container-width-md: 92%;
 }
 
 // Colors
-$body-color: rgba(255, 255, 255, 0.749);
 $color-primary: #02eeff;
 $color-primary-light: #5ddce5;
 $color-bg-600: #001517; //bg-1
