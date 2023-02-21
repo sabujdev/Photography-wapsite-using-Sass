@@ -1,0 +1,92 @@
+//=======================
+// Developer Variable
+//=======================
+
+:root {
+  --body-color: rgba(255, 255, 255, 0.749);
+  --color-primary: #02eeff;
+  --color-primary-light: #5ddce5;
+  --color-bg-600: #001517; //bg-1
+  --color-bg-700: #00282d; //bg-2
+  --color-bg-800: #012e34; //bg-3
+  --color-bg-900: #003f47; //bg-4
+  --color-light: #85afb2;
+  --color-white: #e6e6e6;
+  // dark color
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --black: #000;
+  // social color
+  --facebook: #4867aa;
+  --github: #313131;
+  --linkedin: #007bb6;
+//   container 
+--container-width-lg:88%;
+--container-width-md:92%;
+}
+
+// Colors
+$body-color: rgba(255, 255, 255, 0.749);
+$color-primary: #02eeff;
+$color-primary-light: #5ddce5;
+$color-bg-600: #001517; //bg-1
+$color-bg-700: #00282d; //bg-2
+$color-bg-800: #012e34; //bg-3
+$color-bg-900: #003f47; //bg-4
+$color-light: #85afb2;
+$color-white: #e6e6e6;
+// dark color
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+// social color
+$facebook: #4867aa;
+$github: #313131;
+$linkedin: #007bb6;
+
+// Font Weight
+
+// container
+$container-width-lg: 88%;
+$container-width-md: 92%;
+
+// Transition
+$transition: all 0.3s ease-in-out;
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  xxl: 1200px,
+);
+// scss-docs-end container-max-widths
+
+// Grid breakpoints
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px,
+  // scss-docs-end grid-breakpoints
+);
+
+// Responsive Variables
+$extraBig-device: "only screen and (min-width: 1600px)";
+$laptop-device: "only screen and (min-width: 1200px) and (max-width: 1599px)";
+$desktop-device: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$tablet-device: "only screen and (min-width: 768px) and (max-width: 991px)";
+$large-mobile: "only screen and (max-width: 767px)";
+$small-mobile: "only screen and (max-width: 575px)";
+$extra-small-mobile: "only screen and (max-width: 479px)";

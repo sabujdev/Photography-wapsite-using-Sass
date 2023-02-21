@@ -1,0 +1,27 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Photography - HTML5 Template
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    01. Theme default CSS
+	02. Header CSS
+	03. Section CSS
+		3.1 - Hero CSS
+		3.2 - About CSS
+		3.3 - Gallery CSS
+		3.4 - Portfolio CSS
+	04. Footer CSS
+
+-----------------------------------------------------------------------------------*/
+// @forward "variable";
+
+@forward "utilities";
+@forward "common";
+@forward "header";
+@forward "section";
+@forward "footer";
