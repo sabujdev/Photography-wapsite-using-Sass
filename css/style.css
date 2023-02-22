@@ -80,7 +80,7 @@ h6 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.6rem;
   color: #e6e6e6;
 }
 
@@ -169,11 +169,73 @@ nav .nav_container .nav_social a:hover {
   position: relative;
   top: 0;
   background: linear-gradient(#012e34, #001517);
-  overflow: hidden;
 }
 .hero-area .hero-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 53% 43%;
+  gap: 4%;
+  margin-top: 10rem;
+  position: relative;
 }
+.hero-area .hero-container .hero-left .hashtag {
+  color: #5ddce5;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.hero-area .hero-container .hero-left p {
+  margin-top: 1.5rem;
+  width: 85%;
+}
+.hero-area .hero-container .hero-left .hero-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: #5ddce5;
+  color: #003f47;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+}
+.hero-area .hero-container .hero-left .hero-btn:hover {
+  background-color: #85afb2;
+  color: #003f47;
+}
+.hero-area .hero-container .hero-left .hero-btn:active {
+  outline: 0.5rem solid #02eeff;
+}
+.hero-area .hero-container .hero-right .hero-img-bg {
+  background-color: #003f47;
+  width: 16rem;
+  height: 22rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.hero-area .hero-container .hero-right .hero-img-lg {
+  position: absolute;
+  top: 1em;
+  right: 1rem;
+  width: 29rem;
+  filter: saturate(0) brightness(0.5);
+  transition: all 0.3s ease-in-out;
+}
+.hero-area .hero-container .hero-right .hero-img-md {
+  position: absolute;
+  top: 10rem;
+  right: 8rem;
+  width: 24rem;
+  height: 24rem;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.hero-area .hero-container .hero-right:hover .hero-img-md {
+  opacity: 0;
+}
+.hero-area .hero-container .hero-right:hover .hero-img-lg {
+  filter: saturate(1) brightness(1);
+  border: 1rem solid #003f47;
+  top: 0;
+  right: 0;
+}
+
 /*----------------------------------------*/
 /*  03.2 About CSS
 /*----------------------------------------*/

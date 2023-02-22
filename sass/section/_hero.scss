@@ -2,17 +2,106 @@
 /*  03.1 Hero CSS
 /*----------------------------------------*/
 @use "../variable" as *;
+
 .hero-area{
     max-width: 100vw;
     height: 100vh;
     position: relative;
     top: 0;
     background: linear-gradient($color-bg-800,$color-bg-600);
-    overflow: hidden;
+    // overflow: hidden;
     .hero-container{
-        display: flex;
-        .hero-left{}
-        .hero-right{}
+        // display: flex;
+        display: grid;
+        grid-template-columns: 53% 43%;
+        gap: 4%;
+        margin-top: 10rem;
+        position: relative;
+        // overflow: hidden;
+  
+        .hero-left{
+            // flex-basis: 53%;
+            .hashtag{
+                color: $color-primary-light;
+                font-size: 1.4rem;
+                font-weight: 700;
+            }
+            p{
+                margin-top: 1.5rem;
+                width: 85%;
+            }
+            .hero-btn{
+                display: inline-block;
+                margin-top: 1.5rem;
+                background-color:$color-primary-light;
+                color: $color-bg-900;
+                padding: 0.5rem 2rem;
+                -o-border-radius: 2rem;
+                -webkit-border-radius: 2rem;
+                -moz-border-radius: 2rem;
+                -ms-border-radius: 2rem;
+                border-radius: 2rem;
+                &:hover{
+                    background-color: $color-light ;
+                    color: $color-bg-900;
+                }
+                &:active{
+                    outline: 0.5rem solid $color-primary;
+                }
+            }
+        }
+        .hero-right{
+            // margin-bottom: 10rem;
+            // flex-basis: 43%;
+            .hero-img-bg{
+                background-color: $color-bg-900;
+                width: 16rem;
+                height: 22rem;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            .hero-img-lg{
+                position: absolute;
+                top: 1em;
+                right: 1rem;
+                width: 29rem;
+                -webkit-filter: saturate(0) brightness(0.5);
+                filter: saturate(0) brightness(0.5);
+                -o-transition:$transition ;
+                -webkit-transition:$transition ;
+                -moz-transition:$transition ;
+                -ms-transition:$transition ;
+                transition:$transition ;
+                
+                
+            }
+            .hero-img-md{
+                position: absolute;
+                top: 10rem;
+                right:8rem;
+                width: 24rem;
+                height: 24rem;
+                overflow: hidden;
+                -o-transition:$transition ;
+                -webkit-transition:$transition ;
+                -moz-transition:$transition ;
+                -ms-transition:$transition ;
+                transition:$transition ;
+            }
+            &:hover .hero-img-md{
+                opacity: 0;
+            }
+            &:hover .hero-img-lg{
+                -webkit-filter: saturate(1) brightness(1);
+                filter: saturate(1) brightness(1);
+                border: 1rem solid $color-bg-900;
+                top: 0;
+                right: 0;
+
+            }
+        }
+        
     }
 
 
