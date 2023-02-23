@@ -3,6 +3,7 @@
 /*----------------------------------------*/
 /*-- Google Font --*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Zilla+Slab:wght@400;500;600;700&display=swap");
+/*-- color Variable--*/
 :root {
   --color-primary: #02eeff;
   --color-primary-light: #5ddce5;
@@ -237,6 +238,36 @@ nav .nav_container .nav_social a:hover {
 }
 
 /*----------------------------------------*/
+/* 3.2 - Hero-Frames CSS
+/*----------------------------------------*/
+.hero-frames {
+  position: absolute;
+  top: 75vh;
+  left: 20rem;
+}
+.hero-frames .frame {
+  width: 20rem;
+  border: 0.5rem solid #012e34;
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+  position: absolute;
+  transform: rotate(-10deg);
+  transform-origin: bottom left;
+  transition: all 0.3s ease-in-out;
+}
+.hero-frames .frame:nth-child(2) {
+  transform: rotate(20deg);
+  top: -2rem;
+  left: -2rem;
+}
+.hero-frames:hover .frame {
+  transform: rotate(0);
+}
+.hero-frames:hover .frame:last-child {
+  top: 0;
+  left: 21rem;
+}
+
+/*----------------------------------------*/
 /*  03.2 About CSS
 /*----------------------------------------*/
 /*----------------------------------------*/
@@ -265,9 +296,10 @@ nav .nav_container .nav_social a:hover {
 	02. Header CSS
 	03. Section CSS
 		3.1 - Hero CSS
-		3.2 - About CSS
-		3.3 - Gallery CSS
-		3.4 - Portfolio CSS
+		3.2 - Hero-Frames CSS
+		3.3- About CSS
+		3.4 - Gallery CSS
+		3.5 - Portfolio CSS
 	04. Footer CSS
 
 -----------------------------------------------------------------------------------*//*# sourceMappingURL=style.css.map */

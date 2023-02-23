@@ -4,9 +4,11 @@
 
 // 3.1 - Hero CSS
 @use "./section/hero";
-// 3.2 - About CSS
+// 3.2 - Hero-Frames CSS
+@use "./section/_hero-frames";
+// 3.3 - About CSS
 @use "./section/about";
-// 3.3 - Gallery CSS
+// 3.4 - Gallery CSS
 @use "./section/gallery";
-// 3.4 - PortfolioCSS
+// 3.5 - PortfolioCSS
 @use "./section/portfolio";
