@@ -38,14 +38,15 @@
         // color: $color-bg-900;
         // padding: 0.5rem 2rem;
         @include btn;
-        @include border-radius(2rem);
-        &:hover {
-          background-color: $color-light;
-          color: $color-bg-900;
-        }
-        &:active {
-          outline: 0.5rem solid $color-primary;
-        }
+        // @include border-radius(2rem);
+        // &:hover {
+        //   background-color: $color-bg-900;
+        //   color: $color-light;
+        // }
+        // &:active {
+        
+        //   outline: 0.5rem solid $color-primary
+        // }
       }
     }
     .hero-right {
@@ -70,7 +71,7 @@
       .hero-img-md {
         position: absolute;
         top: 10rem;
-        right: 8rem;
+        right: 10rem;
         width: 24rem;
         height: 24rem;
         overflow: hidden;

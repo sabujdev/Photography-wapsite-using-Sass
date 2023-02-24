@@ -38,6 +38,16 @@
   background-color: $color-primary-light;
   color: #003f47;
   padding: 0.5rem 2rem;
+  font-weight: 500;
+  @include border-radius(2rem);
+  &:hover {
+    background-color: $color-bg-900;
+    color: $color-light;
+  }
+  &:active {
+  
+    outline: 0.5rem solid $color-primary
+  }
 }
 
 // Border

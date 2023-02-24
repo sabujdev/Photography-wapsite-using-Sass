@@ -14,6 +14,7 @@
 
   .about-left {
     position: relative;
+    overflow: hidden;
     .about-img-bg {
       background-color: $color-bg-900;
       width: 16rem;
@@ -27,13 +28,41 @@
       bottom: 1rem;
       left: 1rem;
       width: 29rem;
-    
-        @include transition();
-        @include filter;
+      @include transition();
+      @include filter;
     }
     .about-img-md {
+      position: absolute;
+      bottom: 10rem;
+      left: 10rem;
+      width: 24rem;
+      height: 24rem;
+      overflow: hidden;
+      @include transition;
+    }
+    &:hover .about-img-md {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &:hover .about-img-lg {
+      @include filter(saturate(1) brightness(1));
+      border: 1rem solid $color-bg-900;
+      bottom: 0;
+      left: 0;
     }
   }
+
   .about-right {
+    margin-top: 5rem;
+    .about-title {
+      margin-bottom: 3rem;
+    }
+    p {
+        margin-bottom: 1em;
+        width: 95%
+    }
+    a {
+      @include btn;
+    }
   }
 }
