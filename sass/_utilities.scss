@@ -1,1 +1,55 @@
+@use "./variable" as *;
 
+// Transition
+@mixin transition($property: all 0.3s ease-in-out) {
+  transition: $property;
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -ms-transition: $property;
+  -o-transition: $property;
+}
+// Filter
+@mixin filter($property: saturate(0) brightness(0.5)) {
+  filter: $property;
+  -webkit-filter: $property;
+}
+
+// Transform
+@mixin transform($property: rotate(0)) {
+  transform: $property;
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  -ms-transform: $property;
+  -o-transform: $property;
+}
+
+// Border-radius
+@mixin border-radius($value) {
+  border-radius: $value;
+  -o-border-radius: $value;
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  -ms-border-radius: $value;
+}
+// Custom btn
+@mixin btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: $color-primary-light;
+  color: #003f47;
+  padding: 0.5rem 2rem;
+}
+
+// Border
+@mixin bordered($width, $color) {
+  border: $width solid $color;
+}
+
+// Build-in function
+
+// $primary : #11141f;
+
+// .box{
+//     background:lighten($primary , 25%);
+//    color: darken($primary, 30%);
+// }

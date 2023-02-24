@@ -1,4 +1,6 @@
 @use "variable" as *;
+@use "./utilities" as *;
+
 /*----------------------------------------*/
 /*  01. Template default CSS
 /*----------------------------------------*/
@@ -37,11 +39,7 @@ body {
 
 a {
   color: $color-light;
-  -o-transition: $transition;
-  -webkit-transition: $transition;
-  -moz-transition: $transition;
-  -ms-transition: $transition;
-  transition: $transition;
+  @include transition();
 }
 
 a:hover {

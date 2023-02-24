@@ -1,7 +1,8 @@
 /*----------------------------------------*/
 /*  02. Header CSS
 /*----------------------------------------*/
-@use "variable" as *;
+@use "./variable" as *;
+@use "./utilities" as *;
 
 nav {
   margin: 0 auto;
@@ -50,16 +51,8 @@ nav {
             height: 2rem;
             background-image: linear-gradient($color-primary-light,$color-primary);
             color: $color-bg-900;
-            -o-border-radius: 0.5rem;
-            -webkit-border-radius: 0.5rem;
-            -moz-border-radius: 0.5rem;
-            -ms-border-radius: 0.5rem;
-            border-radius: 0.5rem;
-            -o-transition: $transition;
-            -webkit-transition: $transition;
-            -moz-transition: $transition;
-            -ms-transition: $transition;
-            transition: $transition;
+            @include border-radius(0.5rem);
+            @include transition;
 
             &:hover{
                 box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);

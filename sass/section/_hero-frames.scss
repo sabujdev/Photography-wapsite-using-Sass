@@ -2,7 +2,13 @@
 /* 3.2 - Hero-Frames CSS
 /*----------------------------------------*/
 @use "../variable" as *;
+@use "../utilities" as *;
 
+#hero-frames-area{
+    width: 20rem;
+    height: 20rem;
+
+}
 .hero-frames {
   position: absolute;
   top: 75vh;
@@ -13,35 +19,20 @@
     border: 0.5rem solid $color-bg-800;
     box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
     position: absolute;
-    -o-transform: rotate(-10deg);
-    -webkit-transform: rotate(-10deg);
-    -moz-transform: rotate(-10deg);
-    -ms-transform: rotate(-10deg);
-    transform: rotate(-10deg);
+    
+   @include transform(rotate(-10deg));
     transform-origin: bottom left;
-    -o-transition: $transition;
-    -webkit-transition: $transition;
-    -moz-transition: $transition;
-    -ms-transition: $transition;
-    transition: $transition;
+    @include transition;
 
     &:nth-child(2) {
-      -o-transform: rotate(20deg);
-      -webkit-transform: rotate(20deg);
-      -moz-transform: rotate(20deg);
-      -ms-transform: rotate(20deg);
-      transform: rotate(20deg);
+      @include transform(rotate(20deg));
       top: -2rem;
       left: -2rem;
     }
   }
 
   &:hover .frame {
-    -o-transform: rotate(0);
-    -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
-    -ms-transform: rotate(0);
-    transform: rotate(0);
+   @include transform;
   }
   &:hover .frame:last-child {
     top: 0;

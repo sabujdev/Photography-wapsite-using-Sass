@@ -1,3 +1,39 @@
 /*----------------------------------------*/
 /*  03.2 About CSS
 /*----------------------------------------*/
+@use "../variable" as *;
+@use "../utilities" as *;
+#about {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.about-container {
+  display: grid;
+  grid-template-columns: 53% 43%;
+  gap: 4%;
+
+  .about-left {
+    position: relative;
+    .about-img-bg {
+      background-color: $color-bg-900;
+      width: 16rem;
+      height: 22rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .about-img-lg {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      width: 29rem;
+    
+        @include transition();
+        @include filter;
+    }
+    .about-img-md {
+    }
+  }
+  .about-right {
+  }
+}
