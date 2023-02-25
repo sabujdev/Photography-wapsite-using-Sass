@@ -413,9 +413,6 @@ nav .nav_container .nav_social a:hover {
 #gallery {
   margin-top: 15rem;
 }
-#gallery .gallery-container {
-  margin: 0 auto;
-}
 #gallery .gallery-container .gallery-head h2 {
   margin-bottom: 2rem;
 }
@@ -448,6 +445,24 @@ nav .nav_container .nav_social a:hover {
 /*----------------------------------------*/
 /*  3.4.Portfolio CSS
 /*----------------------------------------*/
+#portfolio {
+  margin-top: 15rem;
+}
+#portfolio .portfolio-container .portfolio-header {
+  text-align: right;
+}
+#portfolio .portfolio-container .portfolio-header h2 {
+  margin-top: 3rem;
+}
+#portfolio .portfolio-container .portfolio-header p {
+  margin-bottom: 5rem;
+  width: 45%;
+}
+#portfolio .portfolio-container .portfolio-images {
+  display: grid;
+  grid-template-areas: "c2 c2 cv" "ch ch cv" "ch ch cv" "c3 c4 c5";
+}
+
 /*----------------------------------------*/
 /*  03. Section CSS
 /*----------------------------------------*/

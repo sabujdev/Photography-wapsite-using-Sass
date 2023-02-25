@@ -1,3 +1,32 @@
 /*----------------------------------------*/
 /*  3.4.Portfolio CSS
 /*----------------------------------------*/
+@use "../utilities" as *;
+@use "../variable" as *;
+
+#portfolio {
+  margin-top: 15rem;
+  .portfolio-container {
+    .portfolio-header {
+      //   display: flex;
+      //   flex-direction: column;
+      // align-items: flex-end;
+      text-align: right;
+      h2 {
+        margin-top: 3rem;
+      }
+      p {
+        margin-bottom: 5rem;
+        width: 45%;
+      }
+    }
+    .portfolio-images {
+      display: grid;
+      grid-template-areas:
+        "c2 c2 cv"
+        "ch ch cv"
+        "ch ch cv"
+        "c3 c4 c5";
+    }
+  }
+}

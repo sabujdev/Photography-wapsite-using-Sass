@@ -6,7 +6,7 @@
 #gallery {
   margin-top: 15rem;
   .gallery-container {
-    margin: 0 auto;
+    
     .gallery-head {
       h2 {
         margin-bottom: 2rem;
@@ -27,12 +27,10 @@
         border: 1rem solid $color-bg-900;
         @include filter;
         @include transition;
-        &:hover{
-        @include filter(saturate(1) brightness(1));
+        &:hover {
+          @include filter(saturate(1) brightness(1));
         }
-     
-    }
-
+      }
     }
   }
 }
