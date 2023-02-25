@@ -24,43 +24,39 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0.5rem;
-    
+
     .nav-logo h2 {
-        font-size: 1.6rem;
-        text-transform: uppercase;
-        font-weight: 500;
-        color: $color-primary-light;
-      }
-    
-      .nav_links{
-        display: flex;
-        gap: 2.8rem;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: $color-primary-light;
     }
-    .nav_social{
-        display: flex;
-        gap: 1rem;
 
-        a{
-            display: grid;
-            place-items: center;
-            //display: flex;
-            //align-items: center;
-            //justify-content: center;
-            width: 2rem;
-            height: 2rem;
-            background-image: linear-gradient($color-primary-light,$color-primary);
-            color: $color-bg-900;
-            @include border-radius(0.5rem);
-            @include transition;
+    .nav_links {
+      display: flex;
+      gap: 2.8rem;
+    }
+    .nav_social {
+      display: flex;
+      gap: 1rem;
 
-            &:hover{
-                box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);
-            }
+      a {
+        display: grid;
+        place-items: center;
+        //display: flex;
+        //align-items: center;
+        //justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        background-image: linear-gradient($color-primary-light, $color-primary);
+        color: $color-bg-900;
+        @include border-radius(0.5rem);
+        @include transition;
+
+        &:hover {
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
         }
-        
-        
-    }     
+      }
+    }
+  }
 }
-}
-

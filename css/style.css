@@ -135,7 +135,6 @@ nav .nav_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0.5rem;
 }
 nav .nav_container .nav-logo h2 {
   font-size: 1.6rem;
@@ -355,7 +354,7 @@ nav .nav_container .nav_social a:hover {
 }
 .about-container .about-left .about-img-md {
   position: absolute;
-  bottom: 10rem;
+  bottom: 12rem;
   left: 10rem;
   width: 24rem;
   height: 24rem;
@@ -411,6 +410,41 @@ nav .nav_container .nav_social a:hover {
 /*----------------------------------------*/
 /*  3.3 Gallery CSS
 /*----------------------------------------*/
+#gallery {
+  margin-top: 15rem;
+}
+#gallery .gallery-container {
+  margin: 0 auto;
+}
+#gallery .gallery-container .gallery-head h2 {
+  margin-bottom: 2rem;
+}
+#gallery .gallery-container .gallery-head p {
+  margin-bottom: 5rem;
+  width: 50%;
+}
+#gallery .gallery-container .gallery-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  place-items: center;
+}
+#gallery .gallery-container .gallery-images img {
+  width: 32rem;
+  border: 1rem solid #003f47;
+  filter: saturate(0) brightness(0.5);
+  -webkit-filter: saturate(0) brightness(0.5);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+#gallery .gallery-container .gallery-images img:hover {
+  filter: saturate(1) brightness(1);
+  -webkit-filter: saturate(1) brightness(1);
+}
+
 /*----------------------------------------*/
 /*  3.4.Portfolio CSS
 /*----------------------------------------*/

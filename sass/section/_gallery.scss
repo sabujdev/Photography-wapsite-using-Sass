@@ -1,3 +1,38 @@
 /*----------------------------------------*/
 /*  3.3 Gallery CSS
 /*----------------------------------------*/
+@use "../variable" as *;
+@use "../utilities" as *;
+#gallery {
+  margin-top: 15rem;
+  .gallery-container {
+    margin: 0 auto;
+    .gallery-head {
+      h2 {
+        margin-bottom: 2rem;
+      }
+      p {
+        margin-bottom: 5rem;
+        width: 50%;
+      }
+    }
+    .gallery-images {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5rem;
+      place-items: center;
+
+      img {
+        width: 32rem;
+        border: 1rem solid $color-bg-900;
+        @include filter;
+        @include transition;
+        &:hover{
+        @include filter(saturate(1) brightness(1));
+        }
+     
+    }
+
+    }
+  }
+}
