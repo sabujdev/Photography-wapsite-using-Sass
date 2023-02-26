@@ -31,7 +31,7 @@ $color-bg-600: #001517; //bg-1
 $color-bg-700: #00282d; //bg-2
 $color-bg-800: #012e34; //bg-3
 $color-bg-900: #003f47; //bg-4
-$color-light: #85afb2;
+$color-light: rgb(133, 175, 178);
 $color-white: #e6e6e6;
 // dark color
 $gray-600: #6c757d;
@@ -43,6 +43,9 @@ $black: #000;
 $facebook: #4867aa;
 $github: #313131;
 $linkedin: #007bb6;
+
+// Box-shadow
+$box-shadow: 5px 5px 10px rgba(133, 175, 178, 0.1);
 
 // Font Weight
 

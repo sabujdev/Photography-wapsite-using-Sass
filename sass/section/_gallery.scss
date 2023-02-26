@@ -6,7 +6,6 @@
 #gallery {
   margin-top: 15rem;
   .gallery-container {
-    
     .gallery-head {
       h2 {
         margin-bottom: 2rem;
@@ -21,10 +20,17 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 5rem;
       place-items: center;
+      .gallery-image{
+      border: 1rem solid $color-bg-900;
+      // box-shadow: $box-shadow;
+      // @include border-radius(10px );
+     
+      }
 
       img {
         width: 32rem;
-        border: 1rem solid $color-bg-900;
+       
+        @include border-radius(10px 0 10px 0);
         @include filter;
         @include transition;
         &:hover {
