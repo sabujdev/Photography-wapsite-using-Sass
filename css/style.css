@@ -469,7 +469,7 @@ nav .nav_container .nav_social a:hover {
 }
 #portfolio .portfolio-container .portfolio-wrapper {
   display: grid;
-  grid-template-areas: "c1 c2 cv" "ch ch cv" "ch ch cv" "c3 c4 c5";
+  grid-template-areas: "c1 c2 c5" "c3 c4 cv" "ch ch cv" "ch ch cv";
   gap: 3rem;
 }
 #portfolio .portfolio-container .portfolio-wrapper .portfolio-images {
@@ -517,6 +517,17 @@ nav .nav_container .nav_social a:hover {
 /*----------------------------------------*/
 /*  04. Footer CSS
 /*----------------------------------------*/
+footer {
+  margin-top: 5rem;
+  background-color: #003f47;
+}
+footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+
 /*-----------------------------------------------------------------------------------
 
     Template Name: Photography - HTML5 Template

@@ -8,8 +8,8 @@
   margin-top: 15rem;
   .portfolio-container {
     .portfolio-header {
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
       align-items: flex-end;
       // text-align: right;
       h2 {
@@ -18,62 +18,52 @@
       p {
         margin-bottom: 5rem;
         width: 45%;
-      
       }
     }
     .portfolio-wrapper {
       display: grid;
       grid-template-areas:
-        "c1 c2 cv"
+        "c1 c2 c5"
+        "c3 c4 cv"
         "ch ch cv"
-        "ch ch cv"
-        "c3 c4 c5";
-        gap: 3rem;
-        
-        .portfolio-images{
-          // box-shadow: $box-shadow;
-          border: 1rem solid $color-bg-900;
-          // @include border-radius(10px 0 10px 0);
-         
+        "ch ch cv";
+      gap: 3rem;
 
+      .portfolio-images {
+        // box-shadow: $box-shadow;
+        border: 1rem solid $color-bg-900;
+        // @include border-radius(10px 0 10px 0);
 
-
-
-         &:nth-child(1) {
-            grid-area: c1;
-           }
-        &:nth-child(2){
+        &:nth-child(1) {
+          grid-area: c1;
+        }
+        &:nth-child(2) {
           grid-area: c2;
         }
-        &:nth-child(3){
+        &:nth-child(3) {
           grid-area: c3;
         }
-        &:nth-child(4){
+        &:nth-child(4) {
           grid-area: c4;
         }
-        &:nth-child(5){
+        &:nth-child(5) {
           grid-area: c5;
         }
-        &:nth-child(6){
+        &:nth-child(6) {
           grid-area: ch;
         }
-        &:nth-child(7){
+        &:nth-child(7) {
           grid-area: cv;
         }
-        img{
+        img {
           height: 100%;
           @include filter;
           @include transition;
-          
-         
         }
-        &:hover img{
+        &:hover img {
           @include filter(saturate(1) brightness(1));
         }
-
-        }
-        
+      }
     }
   }
-
 }

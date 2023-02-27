@@ -57,13 +57,13 @@ $container-width-md: 92%;
 
 
 // scss-docs-start container-max-widths
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1200px,
-  xxl: 1200px,
-);
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1200px,
+//   xxl: 1200px,
+// );
 // scss-docs-end container-max-widths
 
 // Grid breakpoints
@@ -71,15 +71,15 @@ $container-max-widths: (
 // adapting to different screen sizes, for use in media queries.
 
 // scss-docs-start grid-breakpoints
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1600px,
-  // scss-docs-end grid-breakpoints
-);
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1600px,
+//   // scss-docs-end grid-breakpoints
+// );
 
 // Responsive Variables
 $extraBig-device: "only screen and (min-width: 1600px)";
