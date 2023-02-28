@@ -1,4 +1,3 @@
-
 /*-- color Variable--*/
 :root {
   --color-primary: #02eeff;
@@ -53,9 +52,6 @@ $box-shadow: 5px 5px 10px rgba(133, 175, 178, 0.1);
 $container-width-lg: 88%;
 $container-width-md: 92%;
 
-
-
-
 // scss-docs-start container-max-widths
 // $container-max-widths: (
 //   sm: 540px,
@@ -81,11 +77,11 @@ $container-width-md: 92%;
 //   // scss-docs-end grid-breakpoints
 // );
 
-// Responsive Variables
-$extraBig-device: "only screen and (min-width: 1600px)";
-$laptop-device: "only screen and (min-width: 1200px) and (max-width: 1599px)";
-$desktop-device: "only screen and (min-width: 992px) and (max-width: 1199px)";
-$tablet-device: "only screen and (min-width: 768px) and (max-width: 991px)";
-$large-mobile: "only screen and (max-width: 767px)";
-$small-mobile: "only screen and (max-width: 575px)";
-$extra-small-mobile: "only screen and (max-width: 479px)";
+// // Responsive Variables
+// $extraBig-device: "only screen and (min-width: 1600px)";
+// $laptop-device: "only screen and (min-width: 1200px) and (max-width: 1599px)";
+// $desktop-device: "only screen and (min-width: 992px) and (max-width: 1199px)";
+// $tablet-device: "only screen and (min-width: 768px) and (max-width: 991px)";
+// $large-mobile: "only screen and (max-width: 767px)";
+// $small-mobile: "only screen and (max-width: 575px)";
+// $extra-small-mobile: "only screen and (max-width: 479px)";
