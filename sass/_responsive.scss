@@ -1,38 +1,43 @@
 /*----------------------------------------*/
 /*  Responsive CSS
 /*----------------------------------------*/
-@use "./variable"as *;
-@use "./utilities"as *;
+@use "./variable" as *;
+@use "./utilities" as *;
 
-@media only screen and  (max-width:1366px){
-    .hero-img-bg{
-        width: 12rem;
-        height: 18rem;
-    }
-    .hero-img-md{
-        top: 8rem;
-        right: 8rem;
-        width: 16rem;
-        height: 16rem;
-    }
-    .hero-img-lg{
-        width: 12rem;
-        // height: 12rem;
-    }
+//laptop-device
+// @media only screen and (min-width: 1200) and (max-width: 1366px) {
 
+// }
 
-    .hero-frames {
-        position: absolute;
-        top: 95vh;
-        left: 5rem;
-      
-        .frame {
-          width: 16rem;
-        }
-        &:hover .frame:last-child {
-          top: 0;
-          left: 17rem;
-        }
-      }
-    
+@include devices(xl) {
+  .container {
+    @include container(lg);
+  }
+  .hero-img-bg {
+    width: 12rem;
+    height: 18rem;
+  }
+  .hero-img-md {
+    top: 8rem;
+    right: 8rem;
+    width: 16rem;
+    height: 16rem;
+  }
+  .hero-img-lg {
+    width: 12rem;
+  }
+
+  .hero-frames {
+    position: absolute;
+    top: 95vh;
+    left: 5rem;
+
+    .frame {
+      width: 16rem;
+    }
+    &:hover .frame:last-child {
+      top: 0;
+      left: 17rem;
+    }
+  }
 }

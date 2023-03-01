@@ -49,8 +49,8 @@ $box-shadow: 5px 5px 10px rgba(133, 175, 178, 0.1);
 // Font Weight
 
 // container
-$container-width-lg: 88%;
-$container-width-md: 92%;
+// $container-width-lg: 88%;
+// $container-width-md: 92%;
 
 // scss-docs-start container-max-widths
 // $container-max-widths: (
@@ -60,6 +60,16 @@ $container-width-md: 92%;
 //   xl: 1200px,
 //   xxl: 1200px,
 // );
+// @mixin container(
+//   $sm: 576px,
+//   $md: 768px,
+//   $lg: 992px,
+//   $xl: 1200px,
+//   $xxl: 1600px
+// ){
+//   max-width: $xl;
+  
+// }
 // scss-docs-end container-max-widths
 
 // Grid breakpoints
@@ -67,15 +77,15 @@ $container-width-md: 92%;
 // adapting to different screen sizes, for use in media queries.
 
 // scss-docs-start grid-breakpoints
-// $grid-breakpoints: (
-//   xs: 0,
-//   sm: 576px,
-//   md: 768px,
-//   lg: 992px,
-//   xl: 1200px,
-//   xxl: 1600px,
-//   // scss-docs-end grid-breakpoints
-// );
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px,
+  // scss-docs-end grid-breakpoints
+);
 
 // // Responsive Variables
 // $extraBig-device: "only screen and (min-width: 1600px)";
@@ -85,3 +95,12 @@ $container-width-md: 92%;
 // $large-mobile: "only screen and (max-width: 767px)";
 // $small-mobile: "only screen and (max-width: 575px)";
 // $extra-small-mobile: "only screen and (max-width: 479px)";
+
+
+
+// Breakpoint prefix	Minimum width	CSS
+// sm	640px	@media (min-width: 640px) { ... }
+// md	768px	@media (min-width: 768px) { ... }
+// lg	1024px	@media (min-width: 1024px) { ... }
+// xl	1280px	@media (min-width: 1280px) { ... }
+// 2xl	1536px	@media (min-width: 1536px) { ... }

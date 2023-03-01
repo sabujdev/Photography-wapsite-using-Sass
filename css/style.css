@@ -90,7 +90,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 3.7rem;
 }
 
 ul,
@@ -108,9 +108,9 @@ img {
 }
 
 .container {
-  width: 88%;
+  max-width: 1536px;
   margin: 0 auto;
-  max-width: 2160px;
+  padding: 1rem;
 }
 
 /*----------------------------------------*/
@@ -131,6 +131,7 @@ nav {
   box-shadow: 0 0.2rem 0.7rem rgba(0, 0, 0, 0.3);
 }
 nav .nav_container {
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -176,6 +177,7 @@ nav .nav_container .nav_social a:hover {
 /*  03.1 Hero CSS
 /*----------------------------------------*/
 .hero-area {
+  margin-top: 10rem;
   max-width: 100vw;
   height: 100vh;
   position: relative;
@@ -184,9 +186,8 @@ nav .nav_container .nav_social a:hover {
 }
 .hero-area .hero-container {
   display: grid;
-  grid-template-columns: 53% 43%;
+  grid-template-columns: 50% 46%;
   gap: 4%;
-  margin-top: 10rem;
   position: relative;
 }
 .hero-area .hero-container .hero-left .hashtag {
@@ -218,6 +219,10 @@ nav .nav_container .nav_social a:hover {
 .hero-area .hero-container .hero-left .hero-btn:active {
   outline: 0.5rem solid #02eeff;
 }
+.hero-area .hero-container .hero-right {
+  overflow: hidden;
+  padding-right: 2rem;
+}
 .hero-area .hero-container .hero-right .hero-img-bg {
   background-color: #003f47;
   width: 16rem;
@@ -225,6 +230,7 @@ nav .nav_container .nav_social a:hover {
   position: absolute;
   top: 0;
   right: 0;
+  overflow: hidden;
 }
 .hero-area .hero-container .hero-right .hero-img-lg {
   position: absolute;
@@ -531,7 +537,10 @@ footer p {
 /*----------------------------------------*/
 /*  Responsive CSS
 /*----------------------------------------*/
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
   .hero-img-bg {
     width: 12rem;
     height: 18rem;

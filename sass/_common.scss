@@ -68,7 +68,7 @@ h1 {
   color: $color-white;
 }
 h2 {
-  font-size: 3.5rem;
+  font-size: 3.7rem;
 }
 ul,
 ol {
@@ -83,7 +83,9 @@ img {
   object-fit: cover;
 }
 .container {
-  width: $container-width-lg;
+  @include container();
   margin: 0 auto;
-  max-width: 2160px;
+  padding: 1rem;
+  // max-width: 1536px;
 }
+ 

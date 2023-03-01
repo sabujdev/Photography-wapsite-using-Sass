@@ -55,6 +55,84 @@
   border: $width solid $color;
 }
 
+
+@mixin container($width: 2xl){
+  @if $width == sm{
+    max-width: 640px;
+  }
+  @if $width == md{
+    max-width: 768px;
+  }
+  @if $width == lg{
+    max-width: 1024px;
+  }
+  @if $width == xl{
+    max-width: 1280px;
+  }
+  @if $width == 2xl{
+    max-width: 1536px;
+  }
+ 
+}
+
+
+
+
+
+// Breakpoint prefix	Minimum width	CSS
+// sm	640px	@media (min-width: 640px) { ... }
+// md	768px	@media (min-width: 768px) { ... }
+// lg	1024px	@media (min-width: 1024px) { ... }
+// xl	1280px	@media (min-width: 1280px) { ... }
+// 2xl	1536px	@media (min-width: 1536px) { ... }
+
+// $devices(
+// mobile:sm;
+// tablet:md;
+// desktop:lg;
+// laptop : xl;
+// extraBig: 2xl;
+// );
+
+  // Device is the name of your mixin
+
+  @mixin devices ($breakpoint) {
+    // $breakpoint is simply a variable that can have several values
+    // mobile-device
+    @if $breakpoint==sm {
+        // here `Mobile` is the value of $breakpoint
+        // when call laptop, we mean the following piece of code        
+    @media only screen and (max-width: 640px) {
+      @content;
+    }
+  }
+    // tablet-device
+  @if $breakpoint==md {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  // desktop-device
+  @if $breakpoint==lg {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  } 
+  // laptop-device
+  @if $breakpoint==xl {
+    @media only screen and (max-width: 1280px) {
+      @content;
+    }
+  } 
+  // extraBig-device
+  @if $breakpoint==2xl{
+    @media only screen and (max-width: 1536px) {
+      @content;
+    }
+  } 
+
+}
+
 // Build-in function
 
 // $primary : #11141f;
